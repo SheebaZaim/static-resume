@@ -1,0 +1,118 @@
+/* General styling: */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: rgb(99, 96, 96); */
+    background-color: white;
+    margin:0;
+    padding:190px;
+}
+.resume-container{
+    display:flex;
+    width:80%;
+    margin:0 auto;
+    border-radius:12px;
+    box-shadow: 0 0 20px rgb(128, 87, 87);
+    background-color: #FBE9E7;
+}
+/* left section styling: */
+
+.left-section{
+    background-color: lightcoral;
+    color:rgb(23, 7, 37);
+    padding:20px;
+    width:35%;
+    text-align:center;
+    border-right:solid #6b336b;
+
+}
+.profile-pic{
+    width:132px;
+    height:150px;
+    margin-top:10%;
+    border-radius:30%;
+    border:solid#4D004D ;
+    margin-bottom:20px;
+}
+h1{
+    font-size:24px;
+    margin:10px,0;
+    margin-bottom:30px;
+    text-align:center;
+}
+h3{
+    font-size:18px;
+    padding:2%;
+    margin:20px 0 10px;
+    color:rgb(48, 10, 48);
+    border-radius:10px;
+    box-shadow: 0 0 20px rgb(102, 60, 60);
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+ul{
+    list-style-type: disc;
+    padding:20px;
+    margin:15px 0;
+}
+ul li{
+    margin:5px;
+}
+.right-section{
+    padding:5px;
+    width:65%;
+}
+button{
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 20px;
+    box-shadow: 0 0 15px white;
+    cursor:pointer;
+    margin-top:5%;
+    margin-bottom:5% ;
+    margin-left: 5px;
+}
+button:hover{
+    background-color: rgb(179, 77, 108);
+    transform: scale(1.05)
+}
+
+
+@media (max-width: 480px) {
+    .resume-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+    
+    .left-section, .right-section {
+        width: 20%;
+        padding: 10px;
+        box-shadow: 0 0 10px;
+        border-radius:15px;
+    }
+
+    .profile-pic {
+        width: 50px;
+        height: 50px;
+        padding:0;
+        margin-right: 15%;
+        border-radius: 50%;
+    
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+    
+    h3 {
+        font-size: 14px;
+        border-radius: 15px;
+    }
+    
+    button {
+        font-size: 14px;
+        margin: 2% 0;
+        padding: 8px;
+    }
+}
